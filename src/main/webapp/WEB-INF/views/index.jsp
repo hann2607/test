@@ -18,9 +18,11 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 <script src="https://code.angularjs.org/1.8.0/angular-route.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body ng-app="myApp">
+	
 	<div class="p-5 bg-primary text-white text-center">
 		<h1>7BEE TEAM</h1>
 		<p>One person typed, many people were happy!</p>
@@ -29,8 +31,7 @@
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-4">
 			<div class="container-fluid">
 				<ul class="navbar-nav">
-					<li class="nav-item"><a class="navbar-brand"
-						href="/">SEVENBEE</a></li>
+					<li class="nav-item"><a class="navbar-brand" href="/">SEVENBEE</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,7 +61,8 @@
 	</header>
 	<main class="container">
 		<img alt=""
-			src="https://jobsgo.vn/blog/wp-content/uploads/2019/08/teamwork-la-gi.jpg" width="100%">
+			src="https://jobsgo.vn/blog/wp-content/uploads/2019/08/teamwork-la-gi.jpg"
+			width="100%">
 	</main>
 	<footer class="mt-5">
 		<!-- Remove the container if you want to extend the Footer to full width. -->

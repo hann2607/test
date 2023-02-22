@@ -17,9 +17,30 @@
 	crossorigin="anonymous">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body ng-app="myApp">
+	<button id="myButton" onclick="click()">Click me</button>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#myButton').click(function() {
+				$.ajax({
+					url : '/api/myendpoint',
+					type : 'GET',
+					success : function(data) {
+						// Handle successful response
+						console.log(data);
+					},
+					error : function(jqXHR, textStatus, errorThrown) {
+						// Handle error response
+						console.log(errorThrown);
+					}
+				});
+			});
+		});
+	</script>
 	<div class="p-5 bg-primary text-white text-center">
 		<h1>7BEE TEAM</h1>
 		<p>One person typed, many people were happy!</p>
